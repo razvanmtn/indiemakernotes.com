@@ -1,5 +1,16 @@
 ---
 import '../styles/global.css';
+import Hero from '../components/Hero.astro';
+import Problem from '../components/Problem.astro';
+import WhatItIs from '../components/WhatItIs.astro';
+import Features from '../components/Features.astro';
+import Structure from '../components/Structure.astro';
+import Demo from '../components/Demo.astro';
+import OpenSource from '../components/OpenSource.astro';
+import Philosophy from '../components/Philosophy.astro';
+import Community from '../components/Community.astro';
+import FinalCTA from '../components/FinalCTA.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <!DOCTYPE html>
@@ -7,9 +18,20 @@ import '../styles/global.css';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>indiemakernotes.com</title>
+    <meta name="description" content="Take better notes. Build better projects. The open-source Obsidian framework for indie makers.">
+    <title>IndieMakerNotes - Note-Taking Framework for Indie Makers</title>
 </head>
-<body>
-    <h1>indiemakernotes.com</h1>
+<body class="antialiased">
+    <Hero />
+    <Problem />
+    <WhatItIs />
+    <Features />
+    <Structure />
+    <Demo />
+    <OpenSource />
+    <Philosophy />
+    <Community />
+    <FinalCTA />
+    <Footer />
 </body>
 </html>

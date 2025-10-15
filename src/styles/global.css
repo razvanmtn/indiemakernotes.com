@@ -1,1 +1,24 @@
 @import 'tailwindcss';
+
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Put this in your stylesheet */
+.square-bg {
+    --grid-size: 15px;          /* distance between grid lines */
+    --grid-color: 200, 200, 200;      /* RGB of grid lines */
+    --grid-opacity: 0.20;       /* transparency of the lines (0..1) */
+
+    background-image:
+      linear-gradient(to right,
+        rgba(var(--grid-color), var(--grid-opacity)) 1px,
+        transparent 1px),
+      linear-gradient(to bottom,
+        rgba(var(--grid-color), var(--grid-opacity)) 1px,
+        transparent 1px);
+    background-size: var(--grid-size) var(--grid-size);
+  }
