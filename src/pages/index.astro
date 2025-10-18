@@ -1,18 +1,13 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 import Hero from '../components/Hero.astro';
-import Problem from '../components/Problem.astro';
-import WhatItIs from '../components/WhatItIs.astro';
+import PainPoints from '../components/PainPoints.astro';
 import Features from '../components/Features.astro';
-import Structure from '../components/Structure.astro';
-import Demo from '../components/Demo.astro';
-import OpenSource from '../components/OpenSource.astro';
-import Philosophy from '../components/Philosophy.astro';
-import Community from '../components/Community.astro';
+import Patterns from '../components/Patterns.astro';
 import FinalCTA from '../components/FinalCTA.astro';
 import Footer from '../components/Footer.astro';
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,17 +15,14 @@ import Footer from '../components/Footer.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Take better notes. Build better projects. The open-source Obsidian framework for indie makers.">
     <title>IndieMakerNotes - Note-Taking Framework for Indie Makers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body class="antialiased">
+<body class="bg-background text-foreground antialiased">
+    <Navigation />
     <Hero />
-    <Problem />
-    <WhatItIs />
+    <PainPoints />
     <Features />
-    <Structure />
-    <Demo />
-    <OpenSource />
-    <Philosophy />
-    <Community />
+    <Patterns />
     <FinalCTA />
     <Footer />
 </body>
