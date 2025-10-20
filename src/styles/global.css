@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-card: #141414;
+  --color-card-foreground: #ededed;
+  --color-primary: #3b82f6;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #1f1f1f;
+  --color-secondary-foreground: #a3a3a3;
+  --color-accent: #6366f1;
+  --color-muted: #262626;
+  --color-muted-foreground: #737373;
+  --color-border: #262626;
+  --color-red: #F43F5E;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Put this in your stylesheet */
+.square-bg {
+  --grid-size: 25px;
+  /* distance between grid lines */
+  --grid-color: 100, 100, 100;
+  /* RGB of grid lines */
+  --grid-opacity: 0.10;
+  /* transparency of the lines (0..1) */
+
+  background-image:
+    linear-gradient(to right,
+      rgba(var(--grid-color), var(--grid-opacity)) 1px,
+      transparent 1px),
+    linear-gradient(to bottom,
+      rgba(var(--grid-color), var(--grid-opacity)) 1px,
+      transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+  background-position: -10px 10px;
+}

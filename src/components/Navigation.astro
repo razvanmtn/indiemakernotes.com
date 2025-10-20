@@ -1,0 +1,38 @@
+---
+import logo from '../assets/logo.svg';
+---
+<!-- Navigation -->
+<nav class="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center gap-2">
+                <!-- <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg> -->
+                <img src={logo.src} alt="IndieMakerNotes Logo" class="w-8 h-8">
+                <!-- <span class="text-xl font-semibold">indiemakernotes</span> -->
+
+                <div class="flex items-center gap-0">
+                    <span class="text-xl font-black">indiemaker</span>
+                    <span class="text-xl font-thin">notes</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-muted-foreground hover:text-foreground transition-colors">Features</a>
+                <a href="#patterns" class="text-muted-foreground hover:text-foreground transition-colors">Patterns</a>
+                <a href="https://github.com/razvanmtn" target="_blank" class="text-muted-foreground hover:text-foreground transition-colors">GitHub</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border hover:bg-secondary transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                    Watch Demo <span class="text-sm text-muted-foreground">(Coming Soon)</span>
+                </a>
+                <a href="https://github.com/razvanmtn" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
